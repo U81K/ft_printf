@@ -6,11 +6,11 @@
 /*   By: bgannoun <bgannoun@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:57:13 by bgannoun          #+#    #+#             */
-/*   Updated: 2022/10/23 18:59:06 by bgannoun         ###   ########.fr       */
+/*   Updated: 2022/10/24 12:03:38 by bgannoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	hex(long unsigned int n, char	*base)
 {
@@ -66,9 +66,9 @@ int	percent(va_list args, char c)
 	else if (c == 'd' || c == 'i')
 		return (ft_putnbr(va_arg(args, int)));
 	else if (c == 'x')
-		return (hex(va_arg(args, long unsigned int), "0123456789abcdef"));
+		return (hex(va_arg(args, unsigned int), "0123456789abcdef"));
 	else if (c == 'X')
-		return (hex(va_arg(args, long unsigned int), "0123456789ABCDEF"));
+		return (hex(va_arg(args, unsigned int), "0123456789ABCDEF"));
 	else if (c == 'u')
 		return (unsign(va_arg(args, unsigned int)));
 	else if (c == 'p')
@@ -106,16 +106,13 @@ int	ft_printf(const char *placeholder, ...)
 
 // int main(void)
 // {
-// 	char a = 'z';
-// 	char b = 'b';
-// 	char c = 'i';
-// 	int	n = 2;
-// 	char *str = "hello";
-// 	// ft_printf("%c%c%c\n%s", a, b, c, str);
-// 	printf("|%d\n", printf("%%%p", str));
-// 	printf("|%d\n", ft_printf("%%%p", str));
-// 	// printf("%d", putstr(str));
-// 	// printf("%%%d\n", n);
-// 	// printf("%s %p\n", str, str);
-// 	// printf("%ld", -4294967295);
+// 	// char a = 'z';
+// 	// char b = 'b';
+// 	// char c = 'i';
+// 	// int	n = 2;
+// 	// char *str = "hello";
+// 	// printf("|%d\n", printf("%%%p", str));
+// 	// printf("|%d\n", ft_printf("%%%p", str));
+// 	ft_printf(" %x ", 2147483647);
+// 	printf(" %x ", 2147483647);
 // }

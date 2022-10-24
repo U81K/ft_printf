@@ -6,15 +6,14 @@
 #    By: bgannoun <bgannoun@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/23 17:04:27 by bgannoun          #+#    #+#              #
-#    Updated: 2022/10/23 17:14:04 by bgannoun         ###   ########.fr        #
+#    Updated: 2022/10/23 19:12:32 by bgannoun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-CFLAGS = -Wall -Werror -Wextra -I.
 
-CC = gcc $(CFLAGS)
+CC = gcc -Wall -Werror -Wextra -I.
 
 SRC = ft_putchar.c \
         ft_putnbr.c \

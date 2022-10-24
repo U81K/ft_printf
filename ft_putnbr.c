@@ -6,11 +6,11 @@
 /*   By: bgannoun <bgannoun@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 16:41:15 by bgannoun          #+#    #+#             */
-/*   Updated: 2022/10/23 19:00:35 by bgannoun         ###   ########.fr       */
+/*   Updated: 2022/10/23 19:57:05 by bgannoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(long int n)
 {

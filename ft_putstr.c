@@ -6,11 +6,11 @@
 /*   By: bgannoun <bgannoun@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 16:13:21 by bgannoun          #+#    #+#             */
-/*   Updated: 2022/10/23 17:16:24 by bgannoun         ###   ########.fr       */
+/*   Updated: 2022/10/23 19:57:10 by bgannoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putstr(char *str)
 {
