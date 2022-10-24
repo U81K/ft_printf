@@ -6,13 +6,13 @@
 /*   By: bgannoun <bgannoun@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:57:13 by bgannoun          #+#    #+#             */
-/*   Updated: 2022/10/24 12:03:38 by bgannoun         ###   ########.fr       */
+/*   Updated: 2022/10/24 12:37:29 by bgannoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	hex(long unsigned int n, char	*base)
+int	hex(long long unsigned int n, char	*base)
 {
 	int	count;
 
