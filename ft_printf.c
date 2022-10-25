@@ -6,7 +6,7 @@
 /*   By: bgannoun <bgannoun@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:57:13 by bgannoun          #+#    #+#             */
-/*   Updated: 2022/10/24 12:37:29 by bgannoun         ###   ########.fr       */
+/*   Updated: 2022/10/25 14:51:37 by bgannoun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,26 +23,7 @@ int	hex(long long unsigned int n, char	*base)
 		count += hex(n % 16, base);
 	}
 	else
-	{
 		count += ft_putchar(base[n]);
-	}
-	return (count);
-}
-
-int	address(long long unsigned int n, char	*base)
-{
-	int	count;
-
-	count = 0;
-	if (n >= 16)
-	{
-		count += hex(n / 16, base);
-		count += hex(n % 16, base);
-	}
-	else
-	{
-		count += ft_putchar(base[n]);
-	}
 	return (count);
 }
 
@@ -74,7 +55,7 @@ int	percent(va_list args, char c)
 	else if (c == 'p')
 	{
 		ft_putstr("0x");
-		return (address(va_arg(args, long long unsigned int),
+		return (hex(va_arg(args, long long unsigned int),
 				"0123456789abcdef") + 2);
 	}
 	return (0);
@@ -103,16 +84,3 @@ int	ft_printf(const char *placeholder, ...)
 	va_end(list);
 	return (count);
 }
-
-// int main(void)
-// {
-// 	// char a = 'z';
-// 	// char b = 'b';
-// 	// char c = 'i';
-// 	// int	n = 2;
-// 	// char *str = "hello";
-// 	// printf("|%d\n", printf("%%%p", str));
-// 	// printf("|%d\n", ft_printf("%%%p", str));
-// 	ft_printf(" %x ", 2147483647);
-// 	printf(" %x ", 2147483647);
-// }
